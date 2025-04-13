@@ -1,15 +1,15 @@
 //functions that close and open navigation bar
 
-const closeMenu = document.getElementById("close-menu")
-const showMenu = document.getElementById("show-menu")
+const closeMenuButton = document.getElementById("close-menu")
+const showMenuButton = document.getElementById("show-menu")
 let menuLinks = document.getElementById("menu-links")
 
 
-showMenu.addEventListener("click", function(){
+showMenuButton.addEventListener("click", function(){
     menuLinks.style.left = "0"
 })
 
-closeMenu.addEventListener("click", function(){
+closeMenuButton.addEventListener("click", function(){
     menuLinks.style.left = "100%"
 })
 
