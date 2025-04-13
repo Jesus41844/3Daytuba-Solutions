@@ -76,7 +76,7 @@ header {
   /*Make background darker*/
   background:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/images/main-3d-printer.jpeg");
+    url("../images/main-3d-printer.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
