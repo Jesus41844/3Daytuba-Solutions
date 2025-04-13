@@ -1,0 +1,238 @@
+:root {
+  color-scheme: only light;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0d0d0d;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/*Navigation Bar*/
+header {
+  margin: 1.2vw 0;
+}
+
+#nav-mobile {
+  display: none;
+}
+
+/*Nav bar for desktops*/
+#nav-desktop {
+  padding: 0 1.5vw;
+}
+#nav-desktop ul {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  list-style-type: none;
+}
+
+#nav-links a {
+  color: #cbcbcb;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 1vw;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: clamp(0.8rem, 0.75rem + 0.3vw, 1rem);
+}
+#nav-links a:hover {
+  text-decoration: underline #6a2c91;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2em;
+}
+
+#join-btn {
+  text-align: right;
+}
+
+#join-btn a {
+  background-color: #6a2c91;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(0.8rem, 0.75rem + 0.3vw, 1rem);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.125rem 1.25rem;
+  border-radius: 10px;
+}
+
+/*Section 1, Print!*/
+#section-print {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100vw;
+  height: 85vh;
+
+  /*Make background darker*/
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/main-3d-printer.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, -0.5rem + 8vw, 4rem);
+  line-height: 1em;
+  color: white;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#print-btn {
+  margin-left: 1rem;
+  padding: 0.45rem 1.25rem;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(0.9rem, 0.75rem + 0.3vw, 1.5rem);
+  font-weight: 700;
+  background-color: white;
+  color: #6a2c91;
+  border: 0;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#print-btn:hover {
+  color: #252525;
+}
+
+/*section-info*/
+
+#section-info {
+  padding: 30px 10px;
+  width: 100vw;
+  background-color: white;
+  text-align: center;
+}
+h2 {
+  font-weight: 600;
+  font-size: clamp(1.25rem, 1rem + 1vw, 2rem);
+}
+
+#steps-cont {
+  margin-top: 1.5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+}
+.step {
+  margin: 0 0.5vw;
+  font-weight: 500;
+  font-size: clamp(1rem, 0.75rem + 0.3vw, 1.2rem);
+}
+.step img {
+  max-width: 40%;
+  height: auto;
+}
+
+/*Footer*/
+footer {
+  padding: 25px 10px;
+  font-size: clamp(0.8rem, 0.75rem + 0.3vw, 1rem);
+}
+footer a,
+footer p {
+  color: #d9d9d9;
+  margin-right: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline #6a2c91;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2em;
+}
+footer p {
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+/*SECTION FOR MOBILE DEVICES!!*/
+@media only screen and (max-width: 600px) {
+  #nav-desktop {
+    display: none;
+  }
+
+  #nav-mobile {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    padding: 0.8rem;
+    font-size: 1.45rem;
+  }
+
+  #show-menu {
+    position: absolute;
+    right: 0;
+    padding-right: 0.8rem;
+    z-index: 1;
+    color: white;
+  }
+
+  #menu-links {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    right: 0;
+    background-color: #0d0d0d;
+    transition: left 0.5s;
+    height: 100vh;
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    z-index: 2;
+  }
+
+  #menu-links li {
+    list-style-type: none;
+    padding: 1.5rem;
+  }
+  #menu-links a {
+    text-decoration: none;
+    color: #cbcbcb;
+    font-weight: 600;
+  }
+  #menu-links a:hover {
+    color: #e4bffa;
+  }
+
+  #close-menu i {
+    color: #b765cb;
+  }
+
+  /*Section 1 - Print*/
+
+  #steps-cont {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .step {
+    margin: 0.5rem;
+  }
+  .step img {
+    max-width: 20%;
+  }
+}
+
