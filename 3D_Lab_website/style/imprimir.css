@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0D0D0D;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    /*overflow-x: hidden;*/
+}
+
+/*Navigation Bar*/
+header {
+    margin: 1.2vw 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    width: 100%;
+}
+
+nav a {
+    color: #CBCBCB;
+    overflow: hidden;
+    margin: 0 1.5vw;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: clamp(0.6rem, 2.3vw, 0.9rem);
+    border: 0;
+    box-sizing: border-box;
+}
+nav a:hover {
+    text-decoration: underline #6A2C91;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 0.2em;
+}
+
+#nav-links {
+    display: flex;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#join-btn {
+    margin-left: auto;
+}
+
+#join-btn span {
+    border: 0;
+    padding: 2px 20px;
+    border-radius: 10px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: clamp(0.6rem, 2.3vw, 0.9rem);
+    background-color: #6A2C91;
+    color: white;
+}
+
+#join-btn span:hover, #join-btn a{
+    cursor: pointer;
+    border: 0;
+}
+
+/*Section 1, Print!*/
+.section-print {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    /*Make background darker*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.visual {
+    flex-basis: 30%;
+    width: 50vh;
+    height: 40vh;
+    border: 3px solid #2A3B47;
+    margin: 1.5rem;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#viewer #viewer-container{
+    width: 50vb;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #2A3B47;
+    margin: 1rem;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment {
+    flex-basis: 60%;
+    width: 50vh;
+    height: 30vh;
+    margin: 1.5rem;
+    background: rgba(255, 255, 255, 0.068);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-content {
+    margin-top: 1rem;
+}
+
+#paymentMethod {
+    margin: 1rem;
+    width: 50vh;
+    border-radius: 8px;
+}
+
+.form-group {
+    padding-top: 1rem;
+}
+
+#cardNumber {
+    border-radius: 6px;
+}
+
+#paybtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+input::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #6A2C91;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input::file-selector-button:hover {
+    background: #42125f
+}
+
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+option {
+    border-radius: 15px;
+}
+
+h1 {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1em;
+  color: rgb(255, 255, 255);
+  margin-left: 1.5vw;
+  margin-bottom: 0.8vw;
+}
+
+h2 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 40;
+    font-size: clamp(1.4rem, 4vw, 1.5rem);
+    color: rgb(255, 255, 255);
+    margin-left: 1.5vw;
+}
+
+label {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 40;
+    font-size: clamp(1rem, 3vw, 1rem);
+    color: rgb(255, 255, 255);
+    margin-left: 1.5vw;
+    margin-bottom: 0.8vw;
+}
+
+#file-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: 1.5vw;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    background-color: white;
+    color: #6A2C91;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#label-btn {
+    cursor: pointer !important;
+}
+
+#pay-btn {
+    margin-left: 1.5vw;
+    padding: 5px 20px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    background-color: #6A2C91;
+    color: #000000;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#cancelar-btn {
+    margin-left: 1.5vw;
+    padding: 5px 20px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: #000000;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#print-btn:hover {
+    color: #252525;
+}
+
+/*Footer*/
+footer {
+    padding: 25px 10px;
+}
+footer a, footer p{
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: clamp(0.8rem, 2.3vw, 0.9rem);
+    color: #D9D9D9;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline #6A2C91;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 0.2em;
+}
+footer p {
+    font-size: clamp(0.8rem, 2.3vw, 0.9rem);
+    color: #D9D9D9;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+/*SECTION FOR MOBILE DEVICES!!*/

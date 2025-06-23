@@ -1,0 +1,22 @@
+{
+  "name": "3daytuba-solutions",
+  "version": "1.0.0",
+  "description": "El acceso a la tecnología de impresión 3D en entornos académicos puede verse limitado por barreras operativas, como la gestión de pagos, la disponibilidad de equipos y la eficiencia en los procesos. En respuesta a estos desafíos, surgió la idea de desarrollar un sistema innovador que permitiera a los usuarios gestionar sus impresiones de manera autónoma, optimizando el uso de los equipos y eliminando intermediarios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesus41844/3Daytuba-Solutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jesus41844/3Daytuba-Solutions/issues"
+  },
+  "homepage": "https://github.com/Jesus41844/3Daytuba-Solutions#readme",
+  "dependencies": {
+    "three": "^0.176.0"
+  }
+}
