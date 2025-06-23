@@ -1,0 +1,4 @@
+node_module/
+models/
+.env
+venv/
