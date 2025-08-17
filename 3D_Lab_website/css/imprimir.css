@@ -49,81 +49,14 @@ header {
   text-underline-offset: 0.2em;
 }
 
-
-
-
-/*Section 1, Print!*/
-#section-print {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 100vw;
-  height: 85vh;
-
-  /*Make background darker*/
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../images/main-3d-printer.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+/*main*/
+main {
+    color: #0d0d0d;
+    background-color: white;
+    padding: 2rem 1rem;
 }
-
 h1 {
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 400;
-  font-size: clamp(2rem, 1rem + 4vw, 3rem);
-  line-height: 1em;
-  color: white;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-#print-btn {
-  margin-left: 1rem;
-  padding: 0.45rem 1.25rem;
-  font-family: "Manrope", sans-serif;
-  font-size: clamp(0.9rem, 0.75rem + 0.3vw, 1.5rem);
-  font-weight: 700;
-  background-color: white;
-  color: #6a2c91;
-  border: 0;
-  border-radius: 10px;
-  text-decoration: none;
-}
-#print-btn:hover {
-  color: #252525;
-}
-
-/*section-info*/
-
-#section-info {
-  padding: 30px 10px;
-  width: 100vw;
-  background-color: white;
-  text-align: center;
-}
-h2 {
-  font-weight: 600;
-  font-size: clamp(1.1rem, 0.9rem + 0.8vw, 1.75rem);
-}
-
-#steps-cont {
-  margin-top: 1.5vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: space-around;
-}
-.step {
-  margin: 0 0.5vw;
-  font-weight: 500;
-  font-size: clamp(0.9rem, 0.7rem + 0.25vw, 1.1rem);
-}
-.step img {
-  max-width: 40%;
-  height: auto;
+    margin: 1.25rem 0;
 }
 
 /*Footer*/
@@ -210,17 +143,5 @@ footer p {
     color: #b765cb;
   }
 
-  /*Section 1 - Print*/
-
-  #steps-cont {
-    grid-template-columns: 1fr;
-    align-items: center;
-  }
-  .step {
-    margin: 0.5rem;
-  }
-  .step img {
-    max-width: 20%;
-  }
 }
 

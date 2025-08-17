@@ -3,10 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/terminos.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet"
+    />
+
+    <!--Font awesome for icons-->
+    <script
+        src="https://kit.fontawesome.com/34a548f49e.js"
+        crossorigin="anonymous"
+    ></script>
+
     <title>Términos y Condiciones</title>
 </head>
 <body>
-    <h1>Términos y Condiciones</h1>
-    <p>Por construir</p>
+
+    <header>
+        <!--Nab Bar for desktop-->
+        <nav id="nav-desktop">
+            <ul>
+            <li id="nav-links">
+                <a href="home.html">LOGO</a>
+                <a href="imprimir.html">IMPRIMIR</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="ayuda.html">AYUDA</a>
+            </li>
+            </ul>
+        </nav>
+
+        <!--Nav bar for mobile-->
+        <nav id="nav-mobile">
+            <div class="menu-toggle">
+            <a href="home.html">LOGO</a>
+            <a href="javascript:void(0)" id="show-menu"
+                ><i class="fas fa-bars"></i
+            ></a>
+            </div>
+
+            <div id="menu-links">
+            <a href="javascript:void(0)" id="close-menu">
+                <i class="fa fa-close"></i>
+            </a>
+            <ul>
+                <li>
+                <a href="imprimir.html">IMPRIMIR</a>
+                </li>
+                <li>
+                <a href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                <a href="ayuda.html">AYUDA</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Términos y Condiciones</h1>
+        
+        <section id="info">
+            <p><strong>Fecha de vigencia:</strong> 3 de Septiembre de 2025</p>
+            <p>Al usar nuestro servicio de impresión 3D, aceptas estos términos:</p>
+
+            <b>1. Servicios</b>
+            <p>Ofrecemos impresión 3D de modelos según las especificaciones que nos envíes. Nos reservamos el derecho de rechazar pedidos que consideremos inapropiados o ilegales.</p>
+
+            <b>2. Responsabilidad del cliente</b>
+            <p>Debes garantizar que los diseños que envíes no infringen derechos de autor ni leyes vigentes.</p>
+
+            <b>3. Pagos</b>
+            <p>Los precios se acordarán antes de la impresión. El pago debe completarse según lo indicado antes de producir el pedido.</p>
+
+            <b>4. Entrega</b>
+            <p>Los tiempos de entrega son aproximados. No nos responsabilizamos por retrasos fuera de nuestro control.</p>
+
+            <b>5. Cancelaciones</b>
+            <p>Solo se aceptan cancelaciones antes de iniciar la impresión.</p>
+
+            <b>6. Garantía y responsabilidad</b>
+            <p>Hacemos nuestro mejor esfuerzo para entregar productos de calidad, pero no garantizamos perfección ni nos hacemos responsables por daños indirectos.</p>
+
+            <b>7. Privacidad</b>
+            <p>Tu información se usará solo para procesar pedidos y según nuestra Política de Privacidad.</p>
+
+            <b>8. Ley aplicable</b>
+            <p>Estos términos se rigen por las leyes de Panamá.</p>
+
+        </section>
+
+    
+    </main>
+
+    <footer>
+        <a href="contacto.html">CONTACTO</a>
+        <a href="terminos.html">TÉRMINOS Y CONDICIONES</a>
+        <a href="privacidad.html">PRIVACIDAD</a>
+        <p>&copy; Todos los derechos reservados</p>
+    </footer>
+
+    <script src="../js/mobile_nav_bar.js"></script>
 </body>
 </html>
