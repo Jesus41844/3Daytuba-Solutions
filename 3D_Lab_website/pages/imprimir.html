@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imprimir</title>
+    <link rel="stylesheet" href="../style/imprimir.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/3D_Lab_website/assets/LogoDaytubaMaker.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="/3D_Lab_website/js/printtwo.js"></script>
 </head>
 <body>
-    <h1>Imprimir</h1>
-    <p>Por construir</p>
-</body>
+    <header>
+        <nav>
+            <ul>
+                <li id="nav-links">
+                    <img src="../assets/LogoDaytubaMaker.ico" alt="Logo" class="logo" loading="lazy">
+                    <a href="pages/imprimir.html">IMPRIMIR</a>
+                    <a href="pages/nosotros.html">NOSOTROS</a>
+                    <a href="pages/ayuda.html">AYUDA</a>
+                </li>
+                <li id="join-btn">
+                    <a href="pages/unirse.html"><span>Unirse</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-print">
+            <div class="printh1">
+                <h1>Imprime tu modelo 3D</h1>
+            </div>
+                <div class="dPrint">
+                    <div class="visual" id="viewer-container">
+                        <div class="label-btn">
+                            <label for="stlFile" class="stlInput">
+                                Elige el archivo
+                            </label>
+                            <input type="file" id="stlFile" accept=".stl">
+                        </div>
+                    <div id="viewer">
+                        <!--Falta que se vea el stl en el viewer-->
+                    </div>
+                    </div>
+                    <div class="payment">
+                        <div class="payment-content">
+                            <h2>Pago de impresión</h2>
+                            <!--Falta por hacer el metodo de pago por tarjera de credito-->
+                            <div class="form-group">
+                                <label>Monto: $<span id="amount"></span></label>
+                                <label>Tiempo total:<span id="amount"></span></label>
+                            </div>    
+                            <div class="form-group">
+                                <label>Método de pago:
+                                    <select id="paymentMethod">
+                                        <option value="credit">Elige tu metodo de pago</option>
+                                        <option value="credit">Tarjeta de Crédito</option>
+                                        <option value="paypal">Yappy (En proceso)</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="form-group" id="paybtn">
+                                <button id="pay-btn" onclick="processPayment()">Pagar ahora</button>
+                                <button id="cancelar-btn" onclick="closeModal()">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="pages/contacto.html">CONTACTO</a>
+        <a href="pages/terminos.html">TÉRMINOS Y CONDICIONES</a>
+        <a href="pages/privacidad.html">PRIVACIDAD</a>
+        <p>&copy; Todos los derechos reservados</p>
+    </footer>
 </html>

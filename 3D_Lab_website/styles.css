@@ -49,6 +49,7 @@ nav a:hover {
 #join-btn {
     margin-left: auto;
 }
+
 #join-btn span {
     border: 0;
     padding: 2px 20px;
@@ -59,6 +60,7 @@ nav a:hover {
     background-color: #6A2C91;
     color: white;
 }
+
 #join-btn span:hover, #join-btn a{
     cursor: pointer;
     border: 0;
@@ -66,7 +68,6 @@ nav a:hover {
 
 /*Section 1, Print!*/
 #section-print {
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -84,7 +85,6 @@ nav a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 
@@ -99,7 +99,6 @@ h1 {
 }
 
 #print-btn {
-
     margin-left: 1.5vw;
     padding: 5px 20px;
     font-family: "Manrope", sans-serif;
@@ -118,7 +117,6 @@ h1 {
 /*section-info*/
 
 #section-info {
-
     padding: 30px 10px;
     width: 100%;
     background-color: white;
@@ -141,6 +139,7 @@ h2 {
     font-weight: 500;
     font-size: clamp(0.8rem, 2.3vw, 0.9rem);
 }
+
 .step img {
     width: 40%;
 }
